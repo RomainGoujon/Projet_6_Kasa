@@ -1,0 +1,30 @@
+.header {
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navHeader {
+    display: flex;
+    column-gap: 57px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #FF6060;
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+a.visited {
+    text-decoration: none;
+    color: #FF6060;
+}
