@@ -31,3 +31,17 @@
     color: #FFFFFF;
     margin: 20px;
 }
+
+@media (max-width: 767px) {
+    .cards {
+        padding: 0;
+        grid-template-columns: 1fr;
+        background-color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .housing {
+        height: 255px;
+    }
+}

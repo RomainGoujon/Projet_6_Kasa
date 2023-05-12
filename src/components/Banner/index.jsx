@@ -1,13 +1,13 @@
 import React from 'react';
-import backgroundHome from '../../assets/Image//banner/mer.png';
-import backgroundAbout from '../../assets/Image/banner/montagne.png';
+import backgroundHome from '../../assets/Image//banner/mer.webp';
+import backgroundAbout from '../../assets/Image/banner/montagne.webp';
 import './style.css';
 
 function Banner(props) {
 
     if (props.page=== 'home') {
         return (
-        <section className='banner'>
+        <section className='banner-home'>
             <div className='banner-container'>
                 <img src={backgroundHome} className='banner-image' alt='vue sur mer' title='Chez vous, partout et ailleurs' />  
             </div>
@@ -18,8 +18,8 @@ function Banner(props) {
     );
     } else if (props.page === 'about') {
         return (
-            <section className='banner'>
-            <div className='banner-container'>
+            <section className='banner-about'>
+            <div className='banner-container-about'>
                 <img src={backgroundAbout} className='banner-image' alt='vue sur montagne' title='vue sur montagne' />  
             </div>
             </section>

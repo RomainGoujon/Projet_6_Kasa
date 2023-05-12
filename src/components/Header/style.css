@@ -28,3 +28,18 @@ a.visited {
     text-decoration: none;
     color: #FF6060;
 }
+
+@media (max-width: 767px) {
+    .header {
+        padding: 18px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .navHeader {
+        font-size: 12px;
+        column-gap: 10px;
+    }
+}
