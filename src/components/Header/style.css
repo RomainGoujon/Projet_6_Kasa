@@ -1,6 +1,4 @@
 .header {
-    margin-left: 7%;
-    margin-right: 7%;
     padding: 40px 100px;
     display: flex;
     flex-direction: row;
@@ -31,7 +29,9 @@ a.visited {
 
 @media (max-width: 767px) {
     .header {
-        padding: 18px;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .logo {

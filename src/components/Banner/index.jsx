@@ -1,31 +1,38 @@
 import React from 'react';
-import backgroundHome from '../../assets/Image//banner/mer.webp';
+import backgroundHome from '../../assets/Image/banner/mer.webp';
 import backgroundAbout from '../../assets/Image/banner/montagne.webp';
 import './style.css';
 
-function Banner(props) {
-
-    if (props.page=== 'home') {
-        return (
-        <section className='banner-home'>
-            <div className='banner-container'>
-                <img src={backgroundHome} className='banner-image' alt='vue sur mer' title='Chez vous, partout et ailleurs' />  
-            </div>
-            <div className='banner-container'>
-                <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
-            </div>
-        </section>
-    );
-    } else if (props.page === 'about') {
-        return (
-            <section className='banner-about'>
-            <div className='banner-container-about'>
-                <img src={backgroundAbout} className='banner-image' alt='vue sur montagne' title='vue sur montagne' />  
-            </div>
-            </section>
-        )
-    };
-
+const bannerConfigurations = {
+  home: {
+    className: 'banner-home',
+    imageSrc: backgroundHome,
+    imageAlt: 'vue sur mer',
+    title: 'Chez vous, partout et ailleurs',
+  },
+  about: {
+    className: 'banner-about',
+    imageSrc: backgroundAbout,
+    imageAlt: 'vue sur montagne',
+    title: null,
+  },
 };
 
-export default Banner
+function Banner({ page }) {
+  const { className, imageSrc, imageAlt, title } = bannerConfigurations[page];
+
+  return (
+    <section className={className}>
+      <div className='banner-container'>
+        <img src={imageSrc} className='banner-image' alt={imageAlt} title={imageAlt} />
+      </div>
+      {title && page === 'home' && (
+        <div className='banner-container'>
+          <h1 className='banner-title'>{title}</h1>
+        </div>
+      )}
+    </section>
+  );
+}
+
+export default Banner;
