@@ -36,14 +36,14 @@
 
 @media (max-width: 767px) {
     .banner-home {
-        height: 111px !important;
+        height: 111px;
         margin-bottom: 20px;
     }
 
-    .banner-container {
+    .banner-home .banner-container {
         height: 111px;
     }
-    
+
     .banner-title {
         font-size: 24px;
         display: flex;
