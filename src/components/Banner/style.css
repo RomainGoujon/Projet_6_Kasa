@@ -40,14 +40,19 @@
         margin-bottom: 20px;
     }
 
+    .banner-container {
+        height: 111px;
+    }
+    
     .banner-title {
         font-size: 24px;
         display: flex;
         justify-content: left;
         margin-left: 16px;
     }
-
+    
     .banner-about {
+        height: 223px;
         margin-bottom: 20px;
     }
 }
