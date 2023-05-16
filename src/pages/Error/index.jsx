@@ -5,7 +5,7 @@ import './style.css';
 function Error404() {
     return (
         <main className='error-main'>
-            <p className="error404">404</p>
+            <p className="error-404">404</p>
             <p className="message-error">Oups! La page que vous demandez n'existe pas.</p>
             <Link className='link' to='/'>Retourner sur la page d'accueil</Link>
         </main>

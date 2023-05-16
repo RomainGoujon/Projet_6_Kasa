@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.error404 {
+.error-404 {
     font-weight: 700;
     font-size: 288px;
     color: #FF6060;
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 767px) {
-    .error404 {
+    .error-404 {
         font-size: 96px;
     }
 

@@ -48,14 +48,14 @@
 }
 
 /* Collapse description et equipements */
-.collapseHousing {
+.collapse-housing {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 320px;
 }
 
-.descriptionHousing, .equipmentsHousing {
+.description-housing, .equipments-housing {
     width: 45%;
 }
 
@@ -128,12 +128,12 @@
     }
 
     /* Collapse */
-    .collapseHousing {
+    .collapse-housing {
         flex-direction: column;
         margin-bottom: 65px;
     }
 
-    .descriptionHousing, .equipmentsHousing {
+    .description-housing, .equipments-housing {
         width: 100%;
     }
 

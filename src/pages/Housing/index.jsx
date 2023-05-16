@@ -28,9 +28,7 @@ function Housing() {
                     </div>
 
                     <div className="tag-container">
-                        {
-                        data.tags.map(tag => <Tag key={`${data.id}-${tag}`} tag={tag} />)
-                        }
+                        {data.tags.map(tag => <Tag key={`${data.id}-${tag}`} tag={tag} />)}
                     </div>
                 </div>
 
@@ -41,21 +39,21 @@ function Housing() {
                     </div>
 
                     <div className="rating">
-                        <Stars rating={data.rating} className="ratingStar" />
+                        <Stars rating={data.rating} className="rating-star" />
                     </div>
                 </div>
             </div>
                 
                 
-            <div className="collapseHousing">
-                <div className="descriptionHousing">
+            <div className="collapse-housing">
+                <div className="description-housing">
                     <Collapse
                     collapseTitle={<h2 className="collapse-title">Description</h2>}
                     collapseDescription={<p className="collapse-description">{data.description}</p>} 
                     />
                 </div>
                     
-                <div className="equipmentsHousing">
+                <div className="equipments-housing">
                     <Collapse 
                     collapseTitle={<h2 className="collapse-title">Equipements</h2>}
                     collapseDescription={

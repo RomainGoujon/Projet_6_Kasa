@@ -12,7 +12,7 @@
     border-radius: 25px;
 }
 
-.arrowImg {
+.arrow-img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

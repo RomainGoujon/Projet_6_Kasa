@@ -8,7 +8,7 @@ function Stars({ rating }) {
 
     for (let i = 0; i < 5; i++) {
         const ratingStar = (i < rating) ? starRed : starGrey;
-        stars.push(<img src={ratingStar} alt='rating' key={i} className="ratingStar" />);
+        stars.push(<img src={ratingStar} alt='rating' key={i} className="rating-star" />);
     }
     return stars;
 }

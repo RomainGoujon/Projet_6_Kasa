@@ -15,7 +15,7 @@ function Collapse({collapseTitle , collapseDescription}) {
                 <div className="collapse-title" onClick={handleClick}>
                     {collapseTitle}
                     <img src={arrow}
-                    className={`arrow-icon ${isOpen ? "arrow_up" : "arrow_down"}`}
+                    className={`arrow-icon ${isOpen ? "arrow-up" : "arrow-down"}`}
                     alt="arrow" />
                 </div>
             </div>

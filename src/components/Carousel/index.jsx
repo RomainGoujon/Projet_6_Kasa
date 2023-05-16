@@ -17,7 +17,7 @@ function Carousel({ pictures }) {
     return (
         <div className="carousel">
             <img 
-            className="previous-arrow arrowImg"
+            className="previous-arrow arrow-img"
             src={previousArrow}
             alt="Previous"
             onClick={() => changePicture("previous")}
@@ -30,7 +30,7 @@ function Carousel({ pictures }) {
             />
 
             <img
-            className="next-arrow arrowImg"
+            className="next-arrow arrow-img"
             src={nextArrow}
             alt="Next"
             onClick={() => changePicture("next")}

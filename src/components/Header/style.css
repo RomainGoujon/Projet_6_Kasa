@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.navHeader {
+.nav-header {
     display: flex;
     column-gap: 57px;
     font-size: 24px;
@@ -38,7 +38,7 @@ a.visited {
         height: 40px;
     }
 
-    .navHeader {
+    .nav-header {
         font-size: 12px;
         column-gap: 10px;
     }
