@@ -47,5 +47,11 @@
 
     .collapse-description{
         font-size: 12px;
+        align-items: flex-start;
+        padding: 30px 5px 0px 5px;
+    }
+
+    .collapse-title{
+        margin-left: 5px;
     }
 }

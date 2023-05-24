@@ -16,30 +16,35 @@ function Carousel({ pictures }) {
 
     return (
         <div className="carousel">
-            <img 
-            className="previous-arrow arrow-img"
-            src={previousArrow}
-            alt="Previous"
-            onClick={() => changePicture("previous")}
-            />
-
-            <img 
-            className="picture"
-            src={pictures[currentPicture]}
-            alt="Current"
-            />
+            {pictures.length > 1 && (
+                <img
+                    className="previous-arrow arrow-img"
+                    src={previousArrow}
+                    alt="Previous"
+                    onClick={() => changePicture("previous")}
+                />
+            )}
 
             <img
-            className="next-arrow arrow-img"
-            src={nextArrow}
-            alt="Next"
-            onClick={() => changePicture("next")}
+                className="picture"
+                src={pictures[currentPicture]}
+                alt="Current"
             />
-            
-            <p className="numbers">{currentPicture + 1} / {pictures.length}</p>
+
+            {pictures.length > 1 && (
+                <img
+                    className="next-arrow arrow-img"
+                    src={nextArrow}
+                    alt="Next"
+                    onClick={() => changePicture("next")}
+                />
+            )}
+
+            {pictures.length > 1 && (
+                <p className="numbers">{currentPicture + 1} / {pictures.length}</p>
+            )}
         </div>
-        
     );
-};
+}
 
 export default Carousel

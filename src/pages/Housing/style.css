@@ -120,6 +120,7 @@
         flex-direction: row-reverse;
         align-items: center;
         margin-top: 0;
+        margin-bottom: 16px;
         justify-content: space-between;
     }
 
